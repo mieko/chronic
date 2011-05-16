@@ -199,7 +199,7 @@ module Chronic
     
     # Print this Token in a pretty way
     def to_s
-      @word << '(' << @tags.join(', ') << ') '
+      @word + '(' + @tags.join(', ') + ')'
     end
   end
   
@@ -226,7 +226,7 @@ module Chronic
 
     # Prints this span in a nice fashion
     def to_s
-      '(' << self.begin.to_s << '..' << self.end.to_s << ')'
+      '(' + self.begin.to_s + '..' + self.end.to_s + ')'
     end
     
     unless RUBY_VERSION =~ /1\.9\./

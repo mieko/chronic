@@ -22,5 +22,11 @@ class TestToken < Test::Unit::TestCase
     assert_equal 1, token.tags.size
     assert_equal 'foo', token.word
   end
-  
+
+  def test_tag_word
+    token = Chronic::Token.new('epic')
+    assert_equal 'epic', token.word
+    token.to_s
+    assert_equal 'epic', token.word
+  end
 end
