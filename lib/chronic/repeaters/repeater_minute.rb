@@ -52,6 +52,6 @@ class Chronic::RepeaterMinute < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-minute'
+    super + '-minute'
   end
 end

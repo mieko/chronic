@@ -76,19 +76,19 @@ module Chronic
   
   class ScalarDay < Scalar #:nodoc:
     def to_s
-      super << '-day-' << @type.to_s
+      super + '-day-' + @type.to_s
     end
   end
   
   class ScalarMonth < Scalar #:nodoc:
     def to_s
-      super << '-month-' << @type.to_s
+      super + '-month-' + @type.to_s
     end
   end
   
   class ScalarYear < Scalar #:nodoc:
     def to_s
-      super << '-year-' << @type.to_s
+      super + '-year-' + @type.to_s
     end
   end
 

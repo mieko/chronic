@@ -106,7 +106,7 @@ class Chronic::RepeaterSeason < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-season'
+    super + '-season'
   end
   
   private

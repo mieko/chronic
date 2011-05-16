@@ -120,6 +120,6 @@ class Chronic::RepeaterTime < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-time-' << @type.to_s
+    super + '-time-' + @type.to_s
   end
 end

@@ -57,7 +57,7 @@ class Chronic::RepeaterWeekday < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-weekday'
+    super + '-weekday'
   end
   
   private

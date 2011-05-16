@@ -33,7 +33,7 @@ module Chronic
   
   class OrdinalDay < Ordinal #:nodoc:
     def to_s
-      super << '-day-' << @type.to_s
+      super + '-day-' + @type.to_s
     end
   end
 

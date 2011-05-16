@@ -47,6 +47,6 @@ class Chronic::RepeaterDay < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-day'
+    super + '-day'
   end
 end

@@ -68,6 +68,6 @@ class Chronic::RepeaterWeek < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-week'
+    super + '-week'
   end
 end

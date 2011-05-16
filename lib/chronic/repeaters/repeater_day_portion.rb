@@ -89,6 +89,6 @@ class Chronic::RepeaterDayPortion < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-dayportion-' << @type.to_s
+    super + '-dayportion-' + @type.to_s
   end
 end

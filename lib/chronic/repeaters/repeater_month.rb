@@ -70,6 +70,6 @@ class Chronic::RepeaterMonth < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-month'
+    super + '-month'
   end
 end

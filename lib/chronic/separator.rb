@@ -60,31 +60,31 @@ module Chronic
   
   class SeparatorComma < Separator #:nodoc:
     def to_s
-      super << '-comma'
+      super + '-comma'
     end
   end
   
   class SeparatorSlashOrDash < Separator #:nodoc:
     def to_s
-      super << '-slashordash-' << @type.to_s
+      super + '-slashordash-' + @type.to_s
     end
   end
   
   class SeparatorAt < Separator #:nodoc:
     def to_s
-      super << '-at'
+      super + '-at'
     end
   end
   
   class SeparatorIn < Separator #:nodoc:
     def to_s
-      super << '-in'
+      super + '-in'
     end
   end
   
   class SeparatorOn < Separator #:nodoc:
     def to_s
-      super << '-on'
+      super + '-on'
     end
   end
 

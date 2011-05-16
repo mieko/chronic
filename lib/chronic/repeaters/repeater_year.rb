@@ -59,6 +59,6 @@ class Chronic::RepeaterYear < Chronic::Repeater #:nodoc:
   end
   
   def to_s
-    super << '-year'
+    super + '-year'
   end
 end

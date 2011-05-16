@@ -19,7 +19,7 @@
     end
     
     def to_s
-      'grabber-' << @type.to_s
+      'grabber-' + @type.to_s
     end
   end
 

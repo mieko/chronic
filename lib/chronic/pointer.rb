@@ -20,7 +20,7 @@ module Chronic
     end
     
     def to_s
-      'pointer-' << @type.to_s
+      'pointer-' + @type.to_s
     end
   end
 
